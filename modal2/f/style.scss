@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+$dugme:(
+    ot:none,
+    b:none,
+    br:5px,
+    bc: rgb(136, 2, 2),
+    c:white,
+    h:3em,
+    w:5em
+);
+$dugme-hover:(
+    op:.6
+);
+
+.otvori{
+    outline: map-get($dugme, ot );
+    border: map-get($dugme, b );
+    border-radius: map-get($dugme, br );
+    background-color: map-get($dugme, bc );
+    color: map-get($dugme, c );
+    height: map-get($dugme, h );
+    width: map-get($dugme, w );
+    
+}
+.otvori:hover{
+    opacity: map-get($dugme-hover, op );
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    padding: 2em;
+    background-color: gray;
+    &.full-screen{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        transform: unset;
+    }
+    &.min-screen{
+        width: 150px;
+        overflow: auto;
+        bottom: 0;
+        left: 0;
+        transform: unset;
+        
+    }
+} 
+.uvelicaj{
+    float: right;
+    cursor: pointer;
+    margin: 10px;
+}
+.smanji{
+    margin: 10px;
+    float:right;
+    cursor:pointer;
+    
+}
+
+
+
+.zatvori{
+    outline: map-get($dugme, ot );
+    border: map-get($dugme, b );
+    border-radius: map-get($dugme, br );
+    background-color: map-get($dugme, bc );
+    color: map-get($dugme, c );
+    height: map-get($dugme, h );
+    width: map-get($dugme, w );
+}
+.zatvori:hover{
+    opacity: map-get($dugme-hover, op );
+}
+.father{
+    display: flex;
+    flex-direction: row-;
+    justify-content: space-between;
+}
+.box{
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+}

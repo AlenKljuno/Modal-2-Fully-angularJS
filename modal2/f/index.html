@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app = 'app'>
+    <div ng-controller = 'controller'>
+        
+
+        <div ng-click = 'modal.show = !modal.show'>
+            <button class="otvori">Upali</button>
+        </div>
+        <div class="modal" ng-show = 'modal.show' ng-class = 'normalan'>
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAyMmgtMjR2LTIwaDI0djIwem0tMS0xOWgtMjJ2MThoMjJ2LTE4em0tNCA3aC0xdi0zLjI0MWwtMTEuMjQxIDExLjI0MWgzLjI0MXYxaC01di01aDF2My4yNDFsMTEuMjQxLTExLjI0MWgtMy4yNDF2LTFoNXY1eiIvPjwvc3ZnPg==" ng-click = 'uvecaj()' class="uvelicaj">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yNCAyMmgtMjR2LTIwaDI0djIwem0tMjMtOXY4aDEwdi04aC0xMHptMjIgOHYtMThoLTIydjloMTF2OWgxMXptLTQtOWgtNXYtNWgxdjMuMjQxbDUuMjQxLTUuMjQxLjc1OS43NTktNS4yNDEgNS4yNDFoMy4yNDF2MXoiLz48L3N2Zz4=" ng-click = 'smanji()' class="smanji">
+            <h2>MODAL TITLE</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, consequatur sint dignissimos modi adipisci a culpa ea neque pariatur voluptas dolorum natus nulla fugit accusamus et consectetur optio iure similique earum? Officiis architecto perspiciatis, ullam obcaecati optio dolor reprehenderit cupiditate totam fugiat fugit id temporibus eveniet laudantium beatae saepe deserunt.</p>
+            <hr>
+            <button ng-click = 'modal.show = !modal.show' class="zatvori">cancel</button>
+        </div>
+
+<div class="father">
+    <div class="box"> JA SAM PRVA</div>
+    <div class="box"> JA SAM DRUGA</div>
+    <div class="box"> JA SAM PRVA</div>
+    <div class="box"> JA SAM DRUGA</div>
+</div>
+
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
